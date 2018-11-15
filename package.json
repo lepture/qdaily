@@ -1,0 +1,11 @@
+{
+  "name": "qdaily",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "rollup": "^0.66.6"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c"
+  }
+}
