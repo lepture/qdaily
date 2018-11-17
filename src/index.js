@@ -1,10 +1,10 @@
-import home from './home'
-import article from './article'
+import renderHome from './home'
+import renderArticle from './article'
 
 if (location.pathname === '/mobile/homes.html') {
-  home(window.moose)
+  renderHome(window.moose)
 } else if (location.pathname === '/') {
-  home(window.moose)
+  renderHome(window.moose)
 } else if (/\/mobile\/articles\/\d+\.html/.test(location.pathname)) {
-  article(window.moose)
+  renderArticle(window.moose)
 }

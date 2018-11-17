@@ -1,3 +1,5 @@
+import {formatDate} from './util'
+
 export default function(moose) {
   const sections = []
 
@@ -87,26 +89,5 @@ export default function(moose) {
     items: listItems
   })
 
-  moose.render({sections})
-
-  function formatDate(s) {
-    const date = new Date(s)
-    const seconds = parseInt((new Date() - date) / 1000, 10)
-    if (seconds < 60) {
-      return '刚刚'
-    }
-    const minutes = parseInt(seconds / 60, 10)
-    if (minutes < 60) {
-      return `${minutes}分钟前`
-    }
-    const hours = parseInt(minutes / 60, 10)
-    if (hours < 24) {
-      return `${hours}小时前`
-    }
-    const days = parseInt(hours / 24, 10)
-    if (days < 30) {
-      return `${days}天前`
-    }
-    return date.toJSON().split('T')[0]
-  }
+  moose.render({lang: 'zh', sections})
 }

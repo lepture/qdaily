@@ -10,9 +10,9 @@
   "icon": "http://m.qdaily.com/images/logo.jpg",
   "start": "https://m.qdaily.com/",
   "main": "index.js",
-  "pages": [
-      "https://m.qdaily.com/",
-      "https://m.qdaily.com/mobile/homes.html",
-      "https://m.qdaily.com/mobile/articles/*"
+  "app_pages": [
+    "https://m.qdaily.com/",
+    "https://m.qdaily.com/mobile/homes.html",
+    "https://m.qdaily.com/mobile/articles/*"
   ]
 }
